@@ -5,8 +5,8 @@
 #include "cliente.h"
 #include "utn.h"
 #include "ventas.h"
-#define COBRADO 1
-#define A_COBRAR 2
+#define COBRADO 2
+#define A_COBRAR 1
 
 //Funciones privadas
 static int proximoId(void);
@@ -209,7 +209,7 @@ int ventaInfoCliente(Venta* arrayVenta, int limite, int idVenta, Cliente* array)
 
                 if(menu == 1) {
 
-                    arrayVenta[infoCliente].estado = 1;
+                    arrayVenta[infoCliente].estado = 2;
                     retorno = 0;
                     printf("\n Usted a cobrado");
             }
@@ -265,7 +265,7 @@ int ventas_cobradas(Venta* arrayVenta, int limite)
 
         for(i=0; i<limite; i++)
         {
-            if(arrayVenta[i].isEmpty == 0 && arrayVenta[i].estado == 2)
+            if(arrayVenta[i].isEmpty == 0 && arrayVenta[i].estado == 1)
             {
                 printf("ID: %d - ID CLIENTE: %d - ARCHIVO DE IMAGEN : %s - ZONA: %s\n", arrayVenta[i].idVenta, arrayVenta[i].idCliente, arrayVenta[i].nombreArchivoImagen, arrayVenta[i].zona);
             }

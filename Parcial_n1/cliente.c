@@ -5,7 +5,7 @@
 #include "cliente.h"
 #include "utn.h"
 #include "ventas.h"
-#define DEFINE_DEL_ARCHIVO  "hola"
+
 
 //Funciones privadas
 static int proximoId(void);

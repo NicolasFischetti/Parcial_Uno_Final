@@ -4,6 +4,7 @@
 #include "utn.h"
 #include "cliente.h"
 #include "ventas.h"
+#include "informes.h"
 #define CLIENTES 100
 #define VENTAS 1000
 
@@ -22,13 +23,15 @@ int main()
 
     altaForzadaCliente(array, CLIENTES, "Nicolas", "Fischetti", "23371841792");
     altaForzadaCliente(array, CLIENTES, "Juan", "Gonzalez", "244562346");
+    altaForzadaCliente(array, CLIENTES, "Gustavo", "Perez", "244462346");
 
     altaForzadaVenta(arrayVenta,VENTAS,array, CLIENTES,0,"Zona Oeste","Archivo Prueba", 3);
-    altaForzadaVenta(arrayVenta,VENTAS,array, CLIENTES,0,"ZonaSur","Archivo de Prueba 2", 4);
+    altaForzadaVenta(arrayVenta,VENTAS,array, CLIENTES,0,"Zona Sur","Archivo de Prueba 2", 4);
+    altaForzadaVenta(arrayVenta,VENTAS,array, CLIENTES,0,"CABA","Archivo de Prueba 3", 5);
 
     do
     {
-        getValidInt("\n\n1.Alta Cliente\n2.Baja Cliente\n3.Modificar Cliente\n4.Vender Afiches\n5.Editar Ventas\n6.Cobrar Ventas\n7.Lista clientes, ventas a cobrar\n.8. Salir\n","\nNo valida\n",&menu,1,8,1);
+        getValidInt("\n\n1.Alta Cliente\n2.Baja Cliente\n3.Modificar Cliente\n4.Vender Afiches\n5.Editar Ventas\n6.Cobrar Ventas\n7.Lista clientes, ventas a cobrar\n8.Cliente mas ventas a cobrar\n9. Cliente mas ventas cobradas\n10.Cliente mas ventas\n11. Cant. Cliente compras menos de mil\n.13. Salir\n","\nNo valida\n",&menu,1,11,1);
 
         switch(menu)
         {
@@ -65,12 +68,24 @@ int main()
                 ventas_cobradas(arrayVenta, VENTAS);
                 break;
             case 8:
+                clientes_MasVentasCobrar(arrayVenta,VENTAS, array, CLIENTES, auxiliarId);
                 break;
-
-
+            case 9:
+                clientes_MasVentasCobradas(arrayVenta,VENTAS, array, CLIENTES, auxiliarId);
+                break;
+            case 10:
+                clientes_MasVentas(arrayVenta,VENTAS, array, CLIENTES, auxiliarId);
+                break;
+            case 11:
+                clientes_MenosMilAfiches(arrayVenta,VENTAS, array, CLIENTES, auxiliarId);
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
         }
 
-    }while(menu != 8);
+    }while(menu != 13);
 
     return 0;
 }

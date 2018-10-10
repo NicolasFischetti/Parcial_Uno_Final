@@ -77,3 +77,54 @@
 	"utn.h"
 	"ventas.h"
 
+1539121039 source:/home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/cliente.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"utn.h"
+	"ventas.h"
+
+1539129111 /home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/cliente.h
+
+1539120331 /home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/utn.h
+
+1539120331 /home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/ventas.h
+
+1539130240 source:/home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/main.c
+	<stdio_ext.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+	"cliente.h"
+	"ventas.h"
+	"informes.h"
+
+1539121069 source:/home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/utn.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1539129268 source:/home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/ventas.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"utn.h"
+	"ventas.h"
+
+1539131089 source:/home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/informes.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"utn.h"
+	"ventas.h"
+
+1539128251 /home/alumno/Documentos/Parcial_Uno_Final/Parcial_n1/informes.h
+

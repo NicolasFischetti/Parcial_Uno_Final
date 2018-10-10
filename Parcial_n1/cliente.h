@@ -2,6 +2,7 @@
 typedef struct
 {
  int id;
+ int idCliente;
  char nombre[51];
  char apellido[51];
  char cuit[51];
